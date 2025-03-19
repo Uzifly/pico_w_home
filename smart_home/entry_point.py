@@ -1,3 +1,4 @@
+from typing import Any
 from .actuating import DMX512
 from .config import DMXConfig, ButtonsConfig
 from .device import DimmableDevice, BinaryDevice
@@ -23,3 +24,6 @@ class HomeService():
         self.buttons = ButtonFactory(btn_conf)
 
         #self.dmx_poll = Timer(mode = Timer.PERIODIC, period = 2500, callback=self.dmx.service)
+        
+    def __call__(self, *args: Any, **kwds: Any) -> Any:
+        self.buttons.service()
