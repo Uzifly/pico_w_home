@@ -1,0 +1,11 @@
+/.micropico
+/.vscode
+/boot.py
+/function_test.py
+/inst_pkg.py
+/lcd_test.py
+/main.py
+/main_test.py
+/pico_w_home.code-workspace
+/test_uart_dmx.py
+/webrepl_cfg.py
